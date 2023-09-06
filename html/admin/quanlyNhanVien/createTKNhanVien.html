@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name ="viewport" content="width= device-width,initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+      
+    </head>
+<body>
+
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav">
+            <li ><a href="../Home.html">Home</a></li>
+            <li class="active"><a href="../quanlyNhanVien.html">Quản lý nhân viên</a></li>
+            <li><a href="../quanlyNguoiBenh.html">Quản lý người bệnh</a></li>
+            <li><a href="../quanlyLichKham.html">Quản lý lịch khám</a></li>
+            <li><a href="../quanlyLichTiem.html">Quản lý lịch tiêm</a></li>
+            <li><a href="../quanlyThuoc.html">Quản lý thuốc</a></li>
+            <li><a href="../quanlyVaccine.html">Quản lý vaccine</a></li>
+            <li>
+              <a style="text-align: right; background-color: rgb(48, 85, 219);color: white;margin-left: 1350px;" onclick="return confirm('Bạn có muốn đăng xuất không?')" href="../../dangnhap.html"  >Đăng xuất</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+      
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="createTKNhanVien.html">Tạo tài khoản nhân viên</a></li>
+            <li><a href="addNhanVien.html">Thêm nhân viên</a></li>
+            <li><a href="../../../php/quanLyNhanVien/viewNhanVien.php">Xem danh sách nhân viên</a></li>
+            <li><a href="searchNhanVien.html">Tìm kiếm nhân viên</a></li>
+            
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container">
+        <h1>Tạo tài khoản nhân viên</h1>
+        <form action="../../../php/quanLyNhanVien/createTKNhanVien.php" method="post">
+          
+            <div class="form-group">
+                <label for="sdt">Số điện thoại</label>
+                <input type="text" id ="sdt" class="form-control" name="sdt">
+            </div>
+
+    
+            <div class="form-group">
+              <label for="matkhau">Mật khẩu</label>
+              <input type="text" id="matkhau" name="matkhau" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="hoten">Họ tên</label>
+            <input type="text" id ="hoten" class="form-control" name="hoten">
+          </div>
+
+          <div class="form-group">
+            <label for="gioitinh">Giới tính</label>
+            <input type="text" id ="gioitinh" class="form-control" name="gioitinh">
+          </div>
+
+          <div class="form-group">
+            <label for="ngaysinh">Ngày sinh</label>
+            <input type="date" name="ngaysinh" id="ngaysinh" class="form-control">
+          </div>
+
+          <div class="form-group">
+              <label for="diachi">Địa chỉ</label>
+              <input type="text" name="diachi" id="diachi" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="vitri">Vị trí</label>
+            <input type="text" id="vitri" name="vitri" class="form-control">
+          </div>
+
+            <button type="submit" class="btn btn-primary">Tạo</button>
+
+        </form>
+      </div>
+
+
+</body>
+</html>
+   

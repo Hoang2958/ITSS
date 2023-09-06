@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name ="viewport" content="width= device-width,initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav">
+            <li ><a href="Home.html">Home</a></li>
+            <li><a href="quanlyNhanVien.html">Quản lý nhân viên</a></li>
+            <li><a href="quanlyNguoiBenh.html">Quản lý người bệnh</a></li>
+            <li><a href="quanlyLichKham.html">Quản lý lịch khám</a></li>
+            <li><a href="quanlyLichTiem.html">Quản lý lịch tiêm</a></li>
+            <li class="active"><a href="quanlyThuoc.html">Quản lý thuốc</a></li>
+            <li><a href="quanlyVaccine.html">Quản lý vaccine</a></li>
+            <li>
+              <a style="text-align: right; background-color: rgb(48, 85, 219);color: white;margin-left: 1350px;" onclick="return confirm('Bạn có muốn đăng xuất không?')" href="../dangnhap.html"  >Đăng xuất</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <style>
+    .jumbotron {
+        font-size: 10px;
+      color: #000000;
+    }
+    </style>
+    
+    <body>
+      <div class="jumbotron text-center">
+        <p>Quản lý thuốc</p>
+      </div>
+      <div class="list-group">
+        <a href="quanLyThuoc/addThuoc.html" class="list-group-item">Thêm thuốc</a>
+        <a href="../../php/quanLyThuoc/viewThuoc.php" class="list-group-item">Xem danh sách thuốc</a>
+        <a href="quanLyThuoc/searchThuoc.html" class="list-group-item">Tìm kiếm thuốc</a>
+      </div>
+    </body>
+
+</body>
+</html>
+   

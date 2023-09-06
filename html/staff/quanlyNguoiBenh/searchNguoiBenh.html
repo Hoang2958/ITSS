@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name ="viewport" content="width= device-width,initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+      
+    </head>
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav">
+            <li ><a href="../Home.html">Home</a></li>
+            <li class="active"><a href="../quanlyNguoiBenh.html">Quản lý người bệnh</a></li>
+            <li><a href="../quanlyLichKham.html">Quản lý lịch khám</a></li>
+            <li><a href="../quanlyLichTiem.html">Quản lý lịch tiêm</a></li>
+            <li><a href="../quanlyThuoc.html">Quản lý thuốc</a></li>
+            <li><a href="../quanlyVaccine.html">Quản lý vaccine</a></li>
+            <li>
+              <a style="text-align: right; background-color: rgb(48, 85, 219);color: white;margin-left: 1350px;" onclick="return confirm('Bạn có muốn đăng xuất không?')" href="../../dangnhap.html"  >Đăng xuất</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav">
+            <li><a href="addNguoiBenh.html">Thêm người bệnh</a></li>
+            <li><a href="../../../php/quanlyNguoiBenh/viewNguoiBenhStaff.php">Xem danh sách người bệnh </a></li>
+            <li class="active"><a href="searchNguoiBenh.html">Tìm kiếm người bệnh</a></li>
+            <li><a href="../../../php/quanlyNguoiBenh/viewDangKyLichKhamStaff.php">Duyệt đăng ký lịch khám</a></li>
+            <li><a href="../../../php/quanlyNguoiBenh/viewDangKyLichTiemStaff.php">Duyệt đăng ký lịch tiêm</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container">
+        <h1>Tìm kiếm người bệnh</h1>
+        <form action="../../../php/quanlyNguoiBenh/searchNguoiBenhStaff.php" method="post">
+          <div class="form-group">
+              <input type="text" placeholder="Nhập họ tên hoặc số điện thoại, giới tính, ngày sinh, địa chỉ, cân nặng, chiều cao" id ="key" class="form-control" name="key">
+          </div>
+
+          <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+      </form>
+
+</body>
+</html>
